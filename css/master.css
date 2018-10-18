@@ -391,7 +391,7 @@ a{
 @media (max-width: 980px) {
 
     #main-pic{
-      min-height: 500px;
+      min-height: 400px;
     }
 
     .not-index{
