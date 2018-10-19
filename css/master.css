@@ -452,24 +452,31 @@ a{
 
 /* Food column opacity background */
 
-.food{
+.head-content{
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/experience/head1.jpg');
 }
 
 #h1-main{
   margin: 0 ;
-  padding-top: 400px;
-  color: #bbb;
+  color: #fff;
   font-weight: lighter;
   padding-left: 40px;
   padding-right: 40px;
   font-style:italic;
   font-weight: lighter;
-  font-size: 35px;
-  width: 70%;
+  font-size: 30px;
   line-height: 55px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.head-content .content{
+  padding-top: 400px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.head-content p{
+  font-size: 18px;
+  text-align: right;
 }
 
 
@@ -499,9 +506,110 @@ a{
   font-style: italic;
 }
 
+/* Elisa pranti portfolio*/
+
+.elisa{
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/elisa.jpeg');
+}
+
+.elisa {
+  color: #fff;
+}
+
+.elisa-content{
+  grid-gap: 30px;
+}
+
+.elisa-content p{
+  text-align: justify;
+}
+
+/* contact page */
+
+.details h5{
+  margin: 0;
+  text-align: left;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.first section{
+  padding: 20px 0;
+  border-bottom: 1px solid;
+    border-bottom: 0.2px solid #d7b98a;
+}
+.info .title{
+  font-size: 16px;
+}
+
+/* Form styles */
+.name-mail{
+  display: grid;
+  grid-gap: 1%;
+  grid-template-columns: 1fr 1fr
+}
+form{
+  padding-top: 50px;
+}
+
+input, select, textarea{
+  padding: 20px;
+  margin: 10px;
+  width: 100%;
+  border: 1px solid #d7b98a;
+  font-family: Marcellus;
+}
+
+#ans-in{
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  text-align: center;
+}
+
+.btn{
+  text-align: right;
+}
+
+.btn button{
+  width: 150px;
+  height: 50px;
+  background: none;
+  border: 1px solid #d7b98a;
+  font-family: Marcellus;
+  font-size: 20px;
+  font-weight: lighter;
+  color:  #d7b98a;
+}
+
+form{
+  transition: 0.5s ease;
+}
+
+
 /* Media Queries */
 
 @media (max-width: 980px) {
+
+    #h1-main{
+      margin: 0 ;
+      color: #fff;
+      font-weight: lighter;
+      padding-left: 40px;
+      padding-right: 40px;
+      font-style:italic;
+      font-weight: lighter;
+      font-size: 30px;
+      line-height: 55px;
+    }
+
+    .head-content .content{
+      padding-top: 120px;
+    }
+
+    .head-content p{
+      font-size: 16px;
+    }
 
     #main-pic{
       min-height: 400px;
