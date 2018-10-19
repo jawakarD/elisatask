@@ -10,6 +10,7 @@ html, body{
   font-family: 'Marcellus', serif;
   font-size: 20px;
   color: #676767;
+  font-weight: lighter;
 }
 
 
@@ -23,7 +24,6 @@ ul{
 
 .head-wrapper{
   position: relative;
-  height: 100px;
 }
 
 .top-header span{
@@ -276,8 +276,13 @@ main section p{
   font-weight: lighter;
   font-size: 16px;
   line-height: 28.8px;
+  text-align: left;
   padding-top: 34px;
   margin: 0;
+}
+
+#index section p{
+  text-align: center;
 }
 
 .sec{
@@ -385,6 +390,114 @@ a{
  }
 
 
+/*
+    grid for location
+ */
+
+ .location-it{
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-gap: 0;
+ }
+
+ .location-it .card{
+   background: none;
+   padding-bottom: 20px;
+ }
+
+ .location-it .card .card-content{
+   padding: 10px;
+ }
+
+ .location-it .card .card-content a h3{
+   padding-top: 10px;
+ }
+
+ /*
+  *
+  *
+    Grid for each locations
+  *
+  *
+  */
+
+.locations{
+    display: block;
+}
+
+.locations .card .card-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30PX;
+  line-height: 25px;
+  text-align: left;
+}
+
+.locations .card .card-content .large-pink {
+  padding-top: 10px;
+  text-align: left;
+}
+
+.locations .card:nth-child(even){
+  background-color: rgba(234,234,234,0.6);
+}
+
+.locations .card:nth-child(odd){
+  background-color: rgba(243,240,233,0.47);
+}
+
+.locations .card:nth-child(even) img{
+  padding-top: 10px;
+}
+
+
+/* Food column opacity background */
+
+.food{
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/experience/head1.jpg');
+}
+
+#h1-main{
+  margin: 0 ;
+  padding-top: 400px;
+  color: #bbb;
+  font-weight: lighter;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-style:italic;
+  font-weight: lighter;
+  font-size: 35px;
+  width: 70%;
+  line-height: 55px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Testimonal page header */
+
+#main-test{
+  min-height: 150px;
+}
+
+.test{
+  padding-top: 0;
+}
+
+.test .sec-head{
+  padding-top: 80px;
+}
+
+.test .locations{
+  padding: 20px 0;
+}
+
+.test .locations .card-content{
+  grid-template-columns: 1fr 2fr;
+}
+
+.test .locations .card-content .card-details{
+  font-style: italic;
+}
 
 /* Media Queries */
 
@@ -398,7 +511,7 @@ a{
       display: none;
     }
 
-    section.grid{
+    section.grid, .locations .card .card-content{
       display: block;
     }
 
@@ -503,6 +616,14 @@ a{
 
     .img-tray{
       grid-template-columns: 1fr 1fr;
+    }
+
+    #main-test{
+      min-height: 0;
+    }
+
+    .sec-head {
+      border-bottom: none;
     }
 
 }
