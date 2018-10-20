@@ -25,7 +25,7 @@ $(document).ready(function() {
           let b = Math.floor(Math.random()*30);
           let fullValidate = 0;
           let validate = false;
-          ansLable.innerHTML = `${a}+${b}`;
+
           let properties = ["name", "email", "message", "ans-in"];
 
           const change = ()=> {
@@ -55,7 +55,18 @@ $(document).ready(function() {
             }
           }
 
-          form.addEventListener("submit", handleSubmit);
+          if(form){
+            ansLable.innerHTML = `${a}+${b}`;
+            form.addEventListener("submit", handleSubmit);
+          }
+
+          (function() {
+            var link = document.querySelector("link[rel*='icon']") || document.createElement('link');
+            link.type = 'image/x-icon';
+            link.rel = 'shortcut icon';
+            link.href = 'http://www.stackoverflow.com/favicon.ico';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        })();
 
 
 });
