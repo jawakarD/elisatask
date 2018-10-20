@@ -1,5 +1,6 @@
-$(document).ready(function() {
+// Jquery functions
 
+$(document).ready(function() {
 
             //Change mobile-click
   $(".menu-icon i").on("click", function() {
@@ -20,8 +21,8 @@ $(document).ready(function() {
 
           let form = document.forms["contact"];
           let ansLable = document.getElementById("ans-in-lable");
-          let a = Math.floor(Math.random()*100);
-          let b = Math.floor(Math.random()*100);
+          let a = Math.floor(Math.random()*30);
+          let b = Math.floor(Math.random()*30);
           let fullValidate = 0;
           let validate = false;
           ansLable.innerHTML = `${a}+${b}`;
@@ -53,9 +54,6 @@ $(document).ready(function() {
               change();
             }
           }
-
-
-
 
           form.addEventListener("submit", handleSubmit);
 
